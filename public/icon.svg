@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329" />
+      <stop offset="40%" stop-color="#060913" />
+      <stop offset="100%" stop-color="#020408" />
+    </linearGradient>
+
+    <!-- Chrome Metallic Gradient -->
+    <linearGradient id="chromeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="20%" stop-color="#f8fafc" />
+      <stop offset="45%" stop-color="#94a3b8" />
+      <stop offset="55%" stop-color="#ffffff" />
+      <stop offset="80%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+
+    <!-- Chrome Vertical Gradient -->
+    <linearGradient id="chromeVert" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#cbd5e1" />
+      <stop offset="70%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <!-- Amber Clearance Lights -->
+    <radialGradient id="amberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0.9" />
+    </radialGradient>
+
+    <!-- Xenon Blue Headlight Glow -->
+    <radialGradient id="xenonBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="35%" stop-color="#60a5fa" />
+      <stop offset="75%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Emerald Badge Gradient -->
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <!-- Drop Shadows and Glows -->
+    <filter id="neonGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="headlightBeam" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Squircle App Icon Container -->
+  <rect width="512" height="512" rx="115" fill="url(#bgGrad)"/>
+  
+  <!-- Outer Metallic Bezel Border -->
+  <rect x="14" y="14" width="484" height="484" rx="102" fill="none" stroke="url(#chromeGrad)" stroke-width="5" stroke-opacity="0.8"/>
+  <rect x="22" y="22" width="468" height="468" rx="94" fill="none" stroke="#3b82f6" stroke-width="2" stroke-opacity="0.4"/>
+
+  <!-- Carbon Fiber Mesh Background Accent -->
+  <g opacity="0.15">
+    <path d="M0 0 L512 512 M50 0 L512 462 M100 0 L512 412 M150 0 L512 362 M200 0 L512 312 M250 0 L512 262 M300 0 L512 212 M350 0 L512 162 M400 0 L512 112 M450 0 L512 62" stroke="#60a5fa" stroke-width="1.5" />
+    <path d="M512 0 L0 512 M462 0 L0 462 M412 0 L0 412 M362 0 L0 362 M312 0 L0 312 M262 0 L0 262 M212 0 L0 212 M162 0 L0 162 M112 0 L0 112 M62 0 L0 62" stroke="#60a5fa" stroke-width="1.5" />
+  </g>
+
+  <!-- DUAL VERTICAL CHROME EXHAUST STACKS -->
+  <!-- Left Stack -->
+  <rect x="100" y="55" width="22" height="180" rx="6" fill="url(#chromeGrad)" stroke="#1e293b" stroke-width="2"/>
+  <path d="M100 55 C100 35 122 35 122 55 Z" fill="#f8fafc"/>
+  <rect x="96" y="90" width="30" height="90" rx="4" fill="none" stroke="#475569" stroke-width="3" stroke-dasharray="2 3"/>
+  <!-- Right Stack -->
+  <rect x="390" y="55" width="22" height="180" rx="6" fill="url(#chromeGrad)" stroke="#1e293b" stroke-width="2"/>
+  <path d="M390 55 C390 35 412 35 412 55 Z" fill="#f8fafc"/>
+  <rect x="386" y="90" width="30" height="90" rx="4" fill="none" stroke="#475569" stroke-width="3" stroke-dasharray="2 3"/>
+
+  <!-- SEMI TRUCK CAB BODY (FRONT VIEW) -->
+  <!-- Cab Roof / Sunvisor -->
+  <path d="M130 110 L382 110 L370 145 L142 145 Z" fill="#0f172a" stroke="url(#chromeGrad)" stroke-width="3"/>
+  <path d="M125 142 L387 142 L380 156 L132 156 Z" fill="url(#chromeGrad)"/>
+
+  <!-- 5 AMBER CAB CLEARANCE LIGHTS ON ROOF -->
+  <g filter="url(#neonGlow)">
+    <circle cx="180" cy="126" r="8" fill="url(#amberGlow)"/>
+    <circle cx="218" cy="126" r="8" fill="url(#amberGlow)"/>
+    <circle cx="256" cy="126" r="9" fill="url(#amberGlow)"/>
+    <circle cx="294" cy="126" r="8" fill="url(#amberGlow)"/>
+    <circle cx="332" cy="126" r="8" fill="url(#amberGlow)"/>
+  </g>
+
+  <!-- WINDSHIELD (Split 2-Piece Heavy Duty Glass) -->
+  <rect x="145" y="160" width="105" height="55" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2" fill-opacity="0.8"/>
+  <rect x="262" y="160" width="105" height="55" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2" fill-opacity="0.8"/>
+  <!-- Glass Reflections -->
+  <path d="M150 205 L180 165 L195 165 L165 205 Z" fill="#bae6fd" fill-opacity="0.4"/>
+  <path d="M267 205 L297 165 L312 165 L282 205 Z" fill="#bae6fd" fill-opacity="0.4"/>
+
+  <!-- HOOD & MASSIVE CHROME PETERBILT-STYLE GRILLE -->
+  <!-- Hood Frame -->
+  <path d="M138 215 L374 215 L366 335 L146 335 Z" fill="#090d16" stroke="url(#chromeGrad)" stroke-width="6"/>
+
+  <!-- Chrome Grille Surround -->
+  <rect x="175" y="222" width="162" height="110" rx="14" fill="#020617" stroke="url(#chromeGrad)" stroke-width="8"/>
+  
+  <!-- Grille Vertical Chrome Bars / Louvers -->
+  <g stroke="url(#chromeGrad)" stroke-width="4">
+    <line x1="195" y1="230" x2="195" y2="324" />
+    <line x1="210" y1="230" x2="210" y2="324" />
+    <line x1="225" y1="230" x2="225" y2="324" />
+    <line x1="240" y1="230" x2="240" y2="324" />
+    <line x1="256" y1="230" x2="256" y2="324" stroke="#f8fafc" stroke-width="5" />
+    <line x1="272" y1="230" x2="272" y2="324" />
+    <line x1="287" y1="230" x2="287" y2="324" />
+    <line x1="302" y1="230" x2="302" y2="324" />
+    <line x1="317" y1="230" x2="317" y2="324" />
+  </g>
+
+  <!-- Center Chrome Emblem Oval on Grille -->
+  <ellipse cx="256" cy="274" rx="28" ry="16" fill="url(#chromeGrad)" stroke="#1e293b" stroke-width="2"/>
+  <text x="256" y="278" font-family="'Arial Black', sans-serif" font-weight="900" font-size="10" fill="#0f172a" text-anchor="middle" letter-spacing="1">CDL</text>
+
+  <!-- DUAL XENON BLUE HEADLIGHT PODS -->
+  <!-- Left Headlight Housing -->
+  <rect x="115" y="255" width="48" height="42" rx="8" fill="#0f172a" stroke="url(#chromeGrad)" stroke-width="3"/>
+  <circle cx="132" cy="276" r="14" fill="url(#xenonBlue)" filter="url(#headlightBeam)"/>
+  <circle cx="132" cy="276" r="9" fill="#ffffff"/>
+  <rect x="150" y="260" width="8" height="32" rx="3" fill="url(#amberGlow)" filter="url(#neonGlow)"/>
+
+  <!-- Right Headlight Housing -->
+  <rect x="349" y="255" width="48" height="42" rx="8" fill="#0f172a" stroke="url(#chromeGrad)" stroke-width="3"/>
+  <circle cx="380" cy="276" r="14" fill="url(#xenonBlue)" filter="url(#headlightBeam)"/>
+  <circle cx="380" cy="276" r="9" fill="#ffffff"/>
+  <rect x="354" y="260" width="8" height="32" rx="3" fill="url(#amberGlow)" filter="url(#neonGlow)"/>
+
+  <!-- MASSIVE HEAVY-DUTY CHROME BUMPER -->
+  <path d="M90 338 L422 338 L410 376 L102 376 Z" fill="url(#chromeGrad)" stroke="#334155" stroke-width="3"/>
+  <!-- Bumper Bolt Rivets -->
+  <circle cx="115" cy="357" r="4" fill="#1e293b"/>
+  <circle cx="145" cy="357" r="4" fill="#1e293b"/>
+  <circle cx="367" cy="357" r="4" fill="#1e293b"/>
+  <circle cx="397" cy="357" r="4" fill="#1e293b"/>
+  <!-- Front License / Inspection Plate -->
+  <rect x="220" y="344" width="72" height="26" rx="4" fill="#0f172a" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="256" y="361" font-family="monospace" font-weight="900" font-size="12" fill="#fbbf24" text-anchor="middle">PASS-CDL</text>
+
+  <!-- PASS / 100% INSPECTION GOLD-EMERALD EMBLEM -->
+  <g transform="translate(385, 345)">
+    <circle cx="35" cy="35" r="42" fill="url(#badgeGrad)" stroke="#fbbf24" stroke-width="4" filter="url(#neonGlow)"/>
+    <path d="M22 36 L31 46 L50 24" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- BOTTOM TYPOGRAPHY BANNER -->
+  <text x="256" y="426" font-family="'Arial Black', Impact, sans-serif" font-weight="900" font-size="34" fill="#ffffff" text-anchor="middle" letter-spacing="2">
+    CLASS A CDL
+  </text>
+  <text x="256" y="462" font-family="'Arial Black', sans-serif" font-weight="800" font-size="18" fill="#38bdf8" text-anchor="middle" letter-spacing="5">
+    PRE-TRIP MASTER
+  </text>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "Class A CDL Pre-Trip Inspection Master",
+  "description": "Master the Class A CDL Pre-Trip inspection word-for-word with guided walk-around checklists, voice prompts, speech verification, interactive air brake test, video tutorials, and offline sync.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
